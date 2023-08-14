@@ -7,6 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,9 +19,70 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    // F58GMlFvUvUq1QmBt
+    // template_9bp48lt
+    // service_0zujpco
+
+    emailjs
+      .send(
+        "service_0zujpco",
+        "template_9bp48lt",
+        {
+          from_name: form.name,
+          to_name: "Marnel",
+          from_email: form.email,
+          to_email: "mharnhelvalentin@gmail.com",
+          message: form.message,
+        },
+        "F58GMlFvUvUq1QmBt"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          toast.success("Email sent. Thank you!", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          toast.error("Something went wrong. Try again!", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        }
+      );
+  };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
@@ -48,7 +112,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
               type="email"
-              name="name"
+              name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
