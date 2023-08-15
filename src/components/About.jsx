@@ -38,9 +38,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a fresh graduate with a strong passion in IT field specifically in
-        software development. My motivation and adaptability made me a better
-        developer. Let's work together to bring your idea's to life!
+        I'm a recent graduate with a strong ardor for the IT realm, particularly
+        focused on web development. I'm on a mission to translate innovative
+        ideas into captivating online experiences. Join me in exploring my
+        journey of turning passion into pixels.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

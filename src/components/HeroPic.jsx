@@ -1,17 +1,18 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 
 import { heropic } from "../assets";
-import { slideIn } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
 const HeroPic = () => {
   return (
-    <Tilt>
-      <div className=" w-[400px] rounded-full green-pink-gradient p-[2px] shadow-card">
+    <Tilt className="lg:block hidden">
+      <div className="block w-[490px] rounded-full green-pink-gradient p-[2.5px] shadow-card">
         <img
           src={heropic}
           alt="heropic"
-          className="rounded-full object-contain w-[400px] h-[400px"
+          className="rounded-full object-contain w-[490px] h-[490px] bg-inherit"
         />
       </div>
     </Tilt>

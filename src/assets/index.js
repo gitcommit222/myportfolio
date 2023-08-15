@@ -26,7 +26,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import heropic from "./heropic.jpg";
+import heropic from "./heropic.png";
 
 export {
   logo,
