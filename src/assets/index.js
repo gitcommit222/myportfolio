@@ -25,12 +25,16 @@ import batstateu from "./company/batstateu_logo.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import batstateuproj from "./batstateuproj.png";
+import promptopia from "./promptopia.png";
 
 import heropic from "./heropic.png";
+import heropic2 from "./heropic2.png";
 
 export {
   logo,
   heropic,
+  heropic2,
   backend,
   creator,
   mobile,
@@ -54,4 +58,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  batstateuproj,
+  promptopia,
 };

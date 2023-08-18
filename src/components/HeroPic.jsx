@@ -12,7 +12,7 @@ const HeroPic = () => {
         <img
           src={heropic}
           alt="heropic"
-          className="rounded-full object-contain w-[490px] h-[490px] bg-inherit"
+          className="rounded-full object-contain w-[490px] h-[490px] bg-black-100"
         />
       </div>
     </Tilt>

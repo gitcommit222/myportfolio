@@ -16,6 +16,8 @@ import {
   carrent,
   jobit,
   tripguide,
+  batstateuproj,
+  promptopia,
   threejs,
   batstateu,
 } from "../assets";
@@ -146,28 +148,28 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "BatStateU RMS",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "html",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: batstateuproj,
+    source_code_link: "https://github.com/gitcommit222/new-rms-webdev",
   },
   {
-    name: "Job IT",
+    name: "Promptopia",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -176,16 +178,16 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Next.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: promptopia,
+    source_code_link: "https://github.com/gitcommit222/promptopia-nextjs",
   },
   {
     name: "Trip Guide",
