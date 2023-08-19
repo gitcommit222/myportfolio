@@ -4,6 +4,7 @@ import {
   creator,
   web,
   javascript,
+  typescript,
   html,
   css,
   reactjs,
@@ -20,6 +21,7 @@ import {
   promptopia,
   threejs,
   batstateu,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -70,6 +72,10 @@ const technologies = [
     icon: javascript,
   },
   {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
@@ -111,8 +117,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2023 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining web application using HTML, CSS, JavaScript, PHP and other related technologies.",
+      "Collaborating with cross-functional teams including backend developers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -150,7 +156,7 @@ const projects = [
   {
     name: "BatStateU RMS",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A streamlined web-based platform enabling users to efficiently explore, publish, and manage research papers from diverse contributors, providing a seamless solution for comprehensive research management.",
     tags: [
       {
         name: "html",
@@ -171,7 +177,7 @@ const projects = [
   {
     name: "Promptopia",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An elegantly designed web application that empowers users to seamlessly create, update, delete, search, and access prompts with utmost efficiency.",
     tags: [
       {
         name: "react",
@@ -190,25 +196,25 @@ const projects = [
     source_code_link: "https://github.com/gitcommit222/promptopia-nextjs",
   },
   {
-    name: "Trip Guide",
+    name: "My Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive online portfolio adeptly showcasing my proficiencies and extensive experience within the realm of software development.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: portfolio,
+    source_code_link: "https://github.com/gitcommit222/myportfolio",
   },
 ];
 

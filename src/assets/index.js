@@ -27,6 +27,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import batstateuproj from "./batstateuproj.png";
 import promptopia from "./promptopia.png";
+import portfolio from "./portfolio.png";
 
 import heropic from "./heropic.png";
 import heropic2 from "./heropic2.png";
@@ -60,4 +61,5 @@ export {
   tripguide,
   batstateuproj,
   promptopia,
+  portfolio,
 };
