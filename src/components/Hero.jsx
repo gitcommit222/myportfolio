@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { HiOutlineDownload } from "react-icons/hi";
 
 import { slideIn } from "../utils/motion";
 
 import HeroPic from "./HeroPic";
+import resume from "/resume.pdf";
 
 const Hero = () => {
   return (
@@ -26,6 +27,15 @@ const Hero = () => {
             <br className="sm:block hidden" /> web applications and user
             interfaces.
           </p>
+          <div className="mt-5 p-2 bg-[#00cea8] w-[135px] rounded-[5px] ">
+            <a
+              href={resume}
+              download="resume.pdf"
+              className="flex items-center justify-center gap-1"
+            >
+              Resume <HiOutlineDownload size={19} />
+            </a>
+          </div>
         </motion.div>
         <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
           <HeroPic />
