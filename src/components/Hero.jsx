@@ -27,7 +27,7 @@ const Hero = () => {
             <br className="sm:block hidden" /> web applications and user
             interfaces.
           </p>
-          <div className="mt-5 p-2 bg-[#00cea8] w-[135px] rounded-[5px] ">
+          <div className="mt-5 p-2 bg-[#00cea8] w-[135px] rounded-[5px] mb-5">
             <a
               href={resume}
               download="resume.pdf"
