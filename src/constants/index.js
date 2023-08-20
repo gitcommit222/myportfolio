@@ -156,7 +156,7 @@ const projects = [
   {
     name: "BatStateU RMS",
     description:
-      "A streamlined web-based platform enabling users to efficiently explore, publish, and manage research papers from diverse contributors, providing a seamless solution for comprehensive research management.",
+      "Efficiently explore, publish, and manage diverse research papers on a streamlined web platform for comprehensive research management.",
     tags: [
       {
         name: "html",
