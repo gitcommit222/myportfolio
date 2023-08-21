@@ -43,7 +43,7 @@ const About = () => {
         ideas into captivating online experiences. Join me in exploring my
         journey of turning passion into pixels.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 items-center">
+      <div className="mt-20 flex flex-wrap gap-10 items-center justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

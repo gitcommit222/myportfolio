@@ -52,10 +52,6 @@ const services = [
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "UI/UX Designer",
-    icon: creator,
-  },
 ];
 
 const technologies = [
